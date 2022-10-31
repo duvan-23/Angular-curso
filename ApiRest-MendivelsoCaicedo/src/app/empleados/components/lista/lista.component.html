@@ -1,0 +1,20 @@
+<div >
+  <h4 class="letra">Oficinas :</h4>
+  <span class="custom-br"></span>
+  <br>
+  <ul >
+    <div *ngFor="let tienda of listaTiendas$ | async">
+      <div class="alinear">
+        <div class="d-flex"><h5 class="letra"><span class="dot" [ngClass]="tienda.activa ==true?'activa':'inactiva'"></span> {{tienda.nombre| uppercase}}</h5></div>
+        <div class="ms-4" *ngFor="let persona of listaPersonas$ | async">
+          <div *ngIf="persona.tienda==tienda.tienda ">
+            <ul>
+              <li class="tamaño" [style.color]="persona.cargo=='Jefe'?'yellow':persona.cargo=='Encargado'?'Aqua':'black'">{{persona.nombre | uppercase}}</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <br>
+    </div>
+  </ul>
+</div>
