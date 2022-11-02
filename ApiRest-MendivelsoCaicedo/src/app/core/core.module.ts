@@ -9,6 +9,7 @@ import { MaterialModule } from '../material.module';
 import { RouterModule } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 import { SharedModule } from '../shared/shared.module';
+import { SessionService } from './services/session.service';
 
 
 @NgModule({
@@ -25,6 +26,9 @@ import { SharedModule } from '../shared/shared.module';
     FormsModule,
     SharedModule,
     RouterModule,
+  ],
+  providers: [
+    SessionService
   ],
   exports: [
     InicioComponent,

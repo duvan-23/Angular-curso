@@ -25,4 +25,30 @@
 }
 .alinear{
   margin-left: 90px;
+  background-color: darkgray;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  border-radius: 4px;
+}
+.jefe{
+  margin-left: 10px;
+  width: 15px;
+  height: 15px;
+  display: inline-block;
+  background-color:blue;
+}
+.encargado{
+  margin-left: 10px;
+  width: 15px;
+  height: 15px;
+  display: inline-block;
+  background-color:aqua;
+}
+.otro{
+  margin-left: 10px;
+  width: 15px;
+  height: 15px;
+  display: inline-block;
+  background-color:black;
 }

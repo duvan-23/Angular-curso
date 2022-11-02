@@ -8,7 +8,12 @@ a:hover{
 }
 
 a{
-  width: 110px;
+  width: 180px;
   text-align: left;
 }
 
+.usuario{
+  color: white;
+  padding-top: 15px;
+  padding-left: 10px;
+}

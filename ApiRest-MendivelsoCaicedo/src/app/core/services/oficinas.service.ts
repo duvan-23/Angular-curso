@@ -2,8 +2,7 @@ import { HttpClient, HttpErrorResponse, HttpHeaders } from '@angular/common/http
 import { Injectable, OnInit } from '@angular/core';
 import { BehaviorSubject, catchError, filter, from, map, Observable, of, throwError } from 'rxjs';
 import { environment } from 'src/environments/environment';
-import { personas } from '../datos/personas';
-import { Persona } from '../models/persona';
+import { Persona } from '../../models/persona';
 
 @Injectable({
   providedIn: 'root'
@@ -16,26 +15,7 @@ export class OficinasService implements OnInit{
 
   ngOnInit(): void{
   }
-  // ordenar(){
-  //   of(this.personas).pipe(
-  //     map((personas: Persona[])=>personas.filter((persona: Persona)=>persona.cargo === 'Jefe'))
-  //   )
-  //   .subscribe((persona)=>{
-  //     this.personasOrden=[...persona];
-  //   });
-  //   of(this.personas).pipe(
-  //     map((personas: Persona[])=>personas.filter((persona: Persona)=>persona.cargo === 'Encargado'))
-  //   )
-  //   .subscribe((persona)=>{
-  //     this.personasOrden=[...this.personasOrden,...persona];
-  //   });
-  //   of(this.personas).pipe(
-  //     map((personas: Persona[])=>personas.filter((persona: Persona)=>persona.cargo != 'Jefe' && persona.cargo != 'Encargado'))
-  //   )
-  //   .subscribe((persona)=>{
-  //     this.personasOrden=[...this.personasOrden,...persona];
-  //   });
-  // }
+
 
   obtenerPersonasObservable(){
     return this.http.get<Persona[]>(`${environment.api}/empleados`,{

@@ -4,9 +4,9 @@ import { Router } from '@angular/router';
 import { filter, map, Observable, of } from 'rxjs';
 import {Persona} from 'src/app/models/persona';
 import {Tienda} from 'src/app/models/tiendas';
-import { CargosService } from 'src/app/services/cargos.service';
-import { OficinasService } from 'src/app/services/oficinas.service';
-import { TiendasService } from 'src/app/services/tiendas.service';
+import { CargosService } from 'src/app/core/services/cargos.service';
+import { OficinasService } from 'src/app/core/services/oficinas.service';
+import { TiendasService } from 'src/app/core/services/tiendas.service';
 @Component({
   selector: 'app-contenido',
   templateUrl: './contenido.component.html',
@@ -53,6 +53,6 @@ export class ContenidoComponent implements OnInit {
     };
     this.oficinasService.agregarCurso(empleado);
     this.formularioEmpleado.reset();
-    this.router.navigate(['empleados']);
+    this.router.navigate(['empleados/listar']);
   }
 }

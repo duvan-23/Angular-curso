@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { BehaviorSubject } from 'rxjs';
-import { cargos } from '../datos/cargos';
+import { cargos } from '../../datos/cargos';
 
 @Injectable({
   providedIn: 'root'

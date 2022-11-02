@@ -7,8 +7,8 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppRoutingModule } from './app-routing.module';
 import { CoreModule } from './core/core.module';
-import { EmpleadosModule } from './empleados/empleados.module';
-import { EmpleadosRoutingModule } from './empleados/empleados-routing.module';
+import { MaterialModule } from './material.module';
+import { SharedModule } from './shared/shared.module';
 
 
 
@@ -21,7 +21,9 @@ import { EmpleadosRoutingModule } from './empleados/empleados-routing.module';
   imports: [
     BrowserModule,
     CoreModule,
+    SharedModule,
     AppRoutingModule,
+    MaterialModule,
     ReactiveFormsModule,
     BrowserAnimationsModule
   ],

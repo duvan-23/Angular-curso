@@ -3,8 +3,8 @@ import { CheckboxControlValueAccessor } from '@angular/forms';
 import { Observable } from 'rxjs';
 import {Persona} from 'src/app/models/persona';
 import {Tienda} from 'src/app/models/tiendas';
-import { OficinasService } from 'src/app/services/oficinas.service';
-import { TiendasService } from 'src/app/services/tiendas.service';
+import { OficinasService } from 'src/app/core/services/oficinas.service';
+import { TiendasService } from 'src/app/core/services/tiendas.service';
 @Component({
   selector: 'app-lista',
   templateUrl: './lista.component.html',
